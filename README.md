@@ -1,11 +1,11 @@
-# kvcache_jd263
+# cost_throughput_pareto_distribution_profile
 
 **分析KV Cache 与显存优化工程师·成本与吞吐的帕累托边界的数值分布并标出离群点。**
 
-`kvcache_jd263` —— 抽取数值做分布分析，用中位数绝对偏差识别KV Cache 与显存优化工程师·成本与吞吐的帕累托边界上的离群点
+`cost_throughput_pareto_distribution_profile` —— 抽取数值做分布分析，用中位数绝对偏差识别KV Cache 与显存优化工程师·成本与吞吐的帕累托边界上的离群点
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`kvcache_jd263.py` 拷走就能用
+- 单文件，`cost_throughput_pareto_distribution_profile.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install vivekrivas-kvcache_jd263
+pip install vivekrivas-cost_throughput_pareto_distribution_profile
 ```
 
 装完直接用命令名调用：
 
 ```bash
-kvcache_jd263 --help
+cost_throughput_pareto_distribution_profile --help
 ```
 
-也可以不用安装，直接把 `kvcache_jd263.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `cost_throughput_pareto_distribution_profile.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ kvcache_jd263 --help
 ## 用法
 
 ```bash
-python kvcache_jd263.py --file input.txt
-python kvcache_jd263.py --text "示例内容"
-python kvcache_jd263.py --file input.txt --json
+python cost_throughput_pareto_distribution_profile.py --file input.txt
+python cost_throughput_pareto_distribution_profile.py --text "示例内容"
+python cost_throughput_pareto_distribution_profile.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python kvcache_jd263.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_kvcache_jd263.py
+python test_cost_throughput_pareto_distribution_profile.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_kvcache_jd263.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/vivekrivas/kvcache_jd263>
+- GitHub 仓库：<https://github.com/vivekrivas/cost_throughput_pareto_distribution_profile>
 
 ---
 
@@ -79,7 +79,7 @@ python test_kvcache_jd263.py
 vivekrivas 做KV Cache 与显存优化工程师·成本与吞吐的帕累托边界相关的问题，方向对标无问芯穹的架构KV Cache 与显存优化工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://vivekrivas.github.io>
-- 仓库：<https://github.com/vivekrivas/kvcache_jd263>
+- 仓库：<https://github.com/vivekrivas/cost_throughput_pareto_distribution_profile>
 
 ## 许可
 

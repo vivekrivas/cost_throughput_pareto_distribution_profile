@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vivekrivas-kvcache_jd263"
+name = "vivekrivas-cost_throughput_pareto_distribution_profile"
 version = "0.1.0"
 description = "抽取数值做分布分析，用中位数绝对偏差识别KV Cache 与显存优化工程师·成本与吞吐的帕累托边界上的离群点"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://vivekrivas.github.io"
-Repository = "https://github.com/vivekrivas/kvcache_jd263"
-Issues = "https://github.com/vivekrivas/kvcache_jd263/issues"
+Repository = "https://github.com/vivekrivas/cost_throughput_pareto_distribution_profile"
+Issues = "https://github.com/vivekrivas/cost_throughput_pareto_distribution_profile/issues"
 
 [project.scripts]
-kvcache_jd263 = "kvcache_jd263:main"
+cost_throughput_pareto_distribution_profile = "cost_throughput_pareto_distribution_profile:main"
 
 [tool.setuptools]
-py-modules = ["kvcache_jd263"]
+py-modules = ["cost_throughput_pareto_distribution_profile"]
